@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Problems</title>
+  <meta charset="UTF-8"/>
+</head>
+<body>
+    <style>
+        table, th, td, tr {
+  border: 1px solid black;
+}
+    </style>
+    <script>
+        function add7(a){
+            return parseInt(a)+7;
+        }
+   
+        /*let result = add7(prompt());
+        alert(result);*/
+       function multiply(a,b){
+           return parseInt(a)*parseInt(b);
+
+       }
+
+       function capitalize(string){
+        return string.charAt(0).toUpperCase() + string.slice(1).toLowerCase();
+       }
+       function lastLetter(string){
+        return string.slice(-1);
+       }
+       
+      </script>
+    <ul>
+        <table>
+            <tr>
+
+            <td>
+               Write a function called add7 that takes one number and returns that number + 7.
+            ></td>
+            <td>
+           
+               <button onclick="getElementById('demo').innerHTML=add7(prompt())">
+                Click me
+            </button>
+        </td>
+           <td>
+          
+                <p id="demo"></p>
+            </td> 
+            </tr>
+
+            <tr>
+
+                <td>
+                    Write a function called multiply that takes 2 numbers and returns their product.
+                </td>
+                <td>
+               
+                   <button onclick="getElementById('multiply').innerHTML=multiply(prompt('','Firstnumber'), prompt('','Secondnumber'))">
+                    Click me Multiply
+                </button>
+            </td>
+               <td>
+                     <p id="multiply"></p>
+                </td> 
+            </tr>
+            <tr>
+
+                <td>
+                    Write a function called capitalize that takes a string and returns that string with only the first letter capitalized. Make sure that it can take strings that are lowercase, UPPERCASE or BoTh.
+                </td>
+                <td>
+               
+                   <button onclick="getElementById('capitalize').innerHTML=capitalize(prompt('','Insert string'))">
+                    Click me Capitalize
+                </button>
+            </td>
+               <td>
+                     <p id="capitalize"></p>
+                </td> 
+            </tr>
+            <tr>
+
+                <td>
+                    Write a function called lastLetter that takes a string and returns the very last letter of that string: 
+                </td>
+                <td>
+               
+                   <button onclick="getElementById('lastLetter').innerHTML=lastLetter(prompt('','Insert string'))">
+                    Click me lastLetter
+                </button>
+            </td>
+               <td>
+                     <p id="lastLetter"></p>
+                </td> 
+            </tr>
+    </ul>
+
+</table>
+    
+  
+</body>
+</html>
